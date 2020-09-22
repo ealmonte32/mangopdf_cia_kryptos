@@ -2,23 +2,22 @@
 
 The python code to solve mango pdf challenge with added upper case conversion.
 
-I want to take this same method and try to solve the remaining Kryptos CIA challenge by using the first letter of every word in the oxford english dictionary, the range of the words would be from 5 characters and up.
+I want to take this same method and try to solve the remaining Kryptos CIA challenge by using the first letter of every word in the oxford english dictionary, the range of the words would be from 5 characters and up.  
 
-notes:
+notes:  
 
-kryptos has the encrypted/coded text as "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJ"
-the key is "KRYPTOSABCDEFGHIJLMNQUVWXZKRYP"
-every letter on the key will be the corresponding decoded key when the corresponding row is used and pinned against the coded text
+kryptos has the encrypted/coded text as "EMUFPHZLRFAXYUSDJKZLDKRNSHGNFIVJ"  
+the key is "KRYPTOSABCDEFGHIJLMNQUVWXZKRYP"  
+every letter on the key will be the corresponding decoded key when the corresponding row is used and pinned against the coded text  
 
 every row has a corresponding set of letters, for example P "row" has the following letters: TOSABCDEFGHIJLMNQUVWXZKRYPTOS
-using the example word deciphered PALIMPSEST, this would be a 10 letter word in the dictionary, and it would have gone against the key by taking the E from the coded text and in the "P" row of letters finding the corresponding "E" from coded text and then going up to the column of the corresponding letter which would be "B"..
-to try and explain a bit more, the "P" row has the letter "E" we want to decipher in the 9th position, you then find the 9th position letter in the "key" which is shown above, you can see that the corresponding "deciphered" letter is "B".
+using the example word deciphered PALIMPSEST, this would be a 10 letter word in the dictionary, and it would have gone against the key by taking the E from the coded text and in the "P" row of letters finding the corresponding "E" from coded text and then going up to the column of the corresponding letter which would be "B"..  
+to try and explain a bit more, the "P" row has the letter "E" we want to decipher in the 9th position, you then find the 9th position letter in the "key" which is shown above, you can see that the corresponding "deciphered" letter is "B".  
 
 
+if we take a 5 character word from the dictionary to use it against it, example "HELLO", that means that we take the "H" row and find the "E" on it, and however many positions it is from the beginning of the H row, we find that it is 24 positions until the "E" is found, and then the sample corresponding deciphered letter would have been "W".. this would go on for "E" and the E row with the next coded letter which is "M".. and we would do the same, and so on..  
 
-if we take a 5 character word to use it against it, example "HELLO", that means that the first 5 letters of the kryptos coded text will 
-
-
+The python code I want to do would use array and index to simply take the letter that corresponds to that index key on that row, and pull the corresponding "deciphered" letter, forming thousands of gibberish but with some of the array of words use we would eventually find a sentence that makes sense from the ciphered / coded text.. because for example as you see the word PALIMPSEST is in the dictionary and even though it would have taken a lot of iterations, at some point it would have hit on the correct word/array to be cross-referenced with the key.
 
 
 
@@ -39,7 +38,7 @@ DEFGHIJLMNQUVWXZKRYPTOSABCDEFG
 EFGHIJLMNQUVWXZKRYPTOSABCDEFGH  
 FGHIJLMNQUVWXZKRYPTOSABCDEFGHI  
 GHIJLMNQUVWXZKRYPTOSABCDEFGHIJL  
-IJLMNQUVWXZKRYPTOSABCDEFGHIJL  
+HIJLMNQUVWXZKRYPTOSABCDEFGHIJL  
 IJLMNQUVWXZKRYPTOSABCDEFGHIJLM  
 JLMNQUVWXZKRYPTOSABCDEFGHIJLMN  
 LMNQUVWXZKRYPTOSABCDEFGHIJLMNQ  
