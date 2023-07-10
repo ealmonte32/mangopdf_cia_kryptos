@@ -10,10 +10,10 @@ for i in range(1, 26):
         # only transpose alphanumeric characters
         # ascii lower case is 97 to 122
 	# ascii upper case is 65 to 90
-	if 97 <= ord(char) <= 122: #if lower case
+        if 97 <= ord(char) <= 122: #if lower case
             out += chr(base + (ord(char) + i - base) % 26)
-	elif 65 <= ord(char) <=  90: #if upper case
-	    out += chr(upper + (ord(char) + i - upper) % 26)
+        elif 65 <= ord(char) <=  90: #if upper case
+            out += chr(upper + (ord(char) + i - upper) % 26)
         else: #if there is a space then just print it
             out += char
     print(i, out)
