@@ -3,7 +3,9 @@
 The python code to solve mango pdf challenge with added upper case conversion is shown as an example.
 
 I want to take this same method and try to solve the remaining [Kryptos](https://en.wikipedia.org/wiki/Kryptos) CIA challenge by using the first letter of every word in the oxford english dictionary, the range of the words would be from 5 characters and up, this would save the computation of millions of iterations and instead bring the number of culculation of words to use to less than 200,000 (estimate).  
-For example, a word like "pneumoencephalography" has 21 characters, but there are not 5.1813187e+29 (<<--extremely big number) words in the dictionary, because running a word generator we would have to calculate the permutations of every letter in the alphabet, to the power of the number of characters, in this case "21", but since the words used in the encryption of kryptos are in the english language, we can safely assume that we only need to cross-reference less than 200,000 set of words against the key.  
+For example, a word like "pneumoencephalography" has 21 characters, but there are not 5.1813187e+29 (<<--extremely big number) words in the dictionary, because running a word generator we would have to calculate the permutations of every letter in the alphabet, to the power of the number of characters, in this case "21", but since the words used in the encryption of kryptos are in the english language, we can safely assume that we only need to cross-reference less than 200,000 set of words against the key.
+
+Explanation of how words are used to decipher the text: https://web.archive.org/web/20071116100808/http://filebox.vt.edu/users/batman/kryptos.html
 
 Notes:  
 
